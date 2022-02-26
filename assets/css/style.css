@@ -36,6 +36,9 @@ p {
 }
 
 /* Utilities */
+a {
+  text-decoration: none;
+}
 .hover-grow {
   transition: all 0.5s;
 }
@@ -96,22 +99,213 @@ p {
   }
 }
 
-
-
 /* Counts */
-.counts i{
+.counts i {
   font-size: 42px;
 }
 
-.counts i.blue{
+.counts i.blue {
   color: #0984e3;
 }
-.counts i.red{
+.counts i.red {
   color: #d63031;
 }
-.counts i.orange{
+.counts i.orange {
   color: #fdcb6e;
 }
-.counts i.green{
+.counts i.green {
   color: #00b894;
+}
+
+/* Features */
+.features i {
+  font-size: 44px;
+  color: #68e1fd;
+}
+
+/* Services */
+.services .services-box {
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.services .services-box .icon {
+  font-size: 44px;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.services .services-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.services .services-box a i {
+  font-size: 24px;
+  line-height: 0;
+  margin-right: 0.3rem;
+  padding: 0;
+}
+.services .services-box a:hover {
+  margin-right: 1rem;
+}
+
+/* Service Box Blue */
+.services .services-box.blue {
+  border-bottom: 3px solid #0984e3;
+}
+
+.services .services-box.blue .icon {
+  color: #0984e3;
+  background-color: #c7ecee;
+}
+
+.services .services-box.blue:hover {
+  background-color: #c7ecee;
+  color: #0984e3;
+}
+
+.services .services-box.blue:hover .icon {
+  background-color: #0984e3;
+  color: #c7ecee;
+}
+
+/* Service Box Orange */
+.services .services-box.orange {
+  border-bottom: 3px solid #f6b93b;
+}
+
+.services .services-box.orange .icon {
+  color: #f6b93b;
+  background-color: #f0e5c1;
+}
+
+.services .services-box.orange:hover {
+  background-color: #f0e5c1;
+  color: #f6b93b;
+}
+
+.services .services-box.orange:hover .icon {
+  background-color: #f6b93b;
+  color: #f0e5c1;
+}
+
+/* Service Box Green */
+.services .services-box.green {
+  border-bottom: 3px solid #33d9b2;
+}
+
+.services .services-box.green .icon {
+  color: #33d9b2;
+  background-color: #d4ebc4;
+}
+
+.services .services-box.green:hover {
+  background-color: #d4ebc4;
+  color: #33d9b2;
+}
+
+.services .services-box.green:hover .icon {
+  background-color: #33d9b2;
+  color: #d4ebc4;
+}
+
+/* Pricing */
+.pricing .card {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pricing .card:hover {
+  transform: scale(1.1);
+}
+
+.pricing .card .blue {
+  color: #4a69bd;
+}
+
+.pricing .card .orange {
+  color: #fa983a;
+}
+.pricing .card .green {
+  color: #10ac84;
+}
+.pricing .card .red {
+  color: #e55039;
+}
+
+@media (max-width: 992px) {
+  .pricing .card:hover {
+    transform: none;
+  }
+}
+
+/* Contact */
+.contact .info-box {
+  padding: 25px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.contact .info-box i {
+  font-size: 45px;
+  color: #4a69bd;
+  line-height: 0;
+}
+
+.contact .info-box .celphone {
+  direction: ltr;
+  text-align: right;
+}
+
+.contact .contact-form {
+  padding: 25px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 10rem !important;
+}
+
+.footer-social .social-links i {
+  font-size: 24px;
+  color: #a4ddec;
+  transition: all 0.3s;
+}
+
+.footer-social .social-links i:hover {
+  color: #57bcd8;
+}
+
+footer .footer-links hr {
+  width: 70%;
+  height: 5px;
+  background-color: #0984e3;
+  line-height: 0;
+}
+
+footer .footer-links ul li a{
+  line-height: 1.8rem;
+  color: #000;
+  transition: all 0.3s;
+}
+
+footer .footer-links ul li a:hover{
+  margin-right: 1rem;
+}
+
+footer .end-footer{
+  background-color: #cbdce0;
+  padding: 20px;
 }

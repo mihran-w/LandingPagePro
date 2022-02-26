@@ -20,5 +20,10 @@ $(window).on("load", function () {
 
 // Pure Counters Init
 $(document).ready(function () {
-  new new PureCounter()();
+  new PureCounter();
 });
+
+// AOS.js Init
+// $(document).ready(function () {
+// });
+AOS.init();

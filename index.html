@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap-icons-1.7.2/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- aos.css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <!-- preloader Start -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="pre-div"></div>
-    </div>
+    </div> -->
     <!-- preloader End -->
 
 
@@ -68,16 +71,19 @@
 
 
     <!-- Intro Start -->
-    <section id="intro" class="d-flex align-items-center mt-5 mt-lg-0">
+    <section id="intro" class="d-flex align-items-center mt-5 mt-lg-0 overflow-hidden">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h3 class="text-primary fw-bold text-center text-lg-start">لورم ایپسوم متن ساختگی با تولید سادگی
+                    <h3 class="text-primary fw-bold text-center text-lg-start" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="200">لورم ایپسوم متن ساختگی با تولید سادگی
                         نامفهوم از صنعت چاپ</h3>
-                    <h5 class="text-muted">لورم ایپسوم متن ساختگی با تولید</h5>
-                    <a href="#" class="btn btn-lg btn-primary mt-3 hover-grow">لورم ایپسوم</a>
+                    <h5 class="text-muted" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="300">لورم ایپسوم متن ساختگی با تولید</h5>
+                    <a href="#" class="btn btn-lg btn-primary mt-3 hover-grow" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="400">لورم ایپسوم</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="3000">
                     <img src="./assets/images/intro-img.png" alt="Intro Image" class="img-fluid  mt-5 mt-lg-0">
                 </div>
             </div>
@@ -87,12 +93,12 @@
 
 
     <!-- About Start -->
-    <section class="mt-5">
+    <section class="mt-5 overflow-hidden">
         <div class="container">
             <div class="row gx-0 gy-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="container">
-                        <div class="content">
+                        <div class="content"  data-aos="zoom-out-right" data-aos-delay="400" data-aos-duration="1000">
                             <h5 class="text-primary">لورم ایپسوم متن ساختگی با تولید سادگی</h5>
                             <h2 class="fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h2>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
@@ -103,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-out-left" data-aos-delay="400" data-aos-duration="300">
                     <img src="./assets/images/about.jfif" alt="about" class="img-fluid rounded-3">
                 </div>
             </div>
@@ -113,7 +119,7 @@
 
 
     <!-- Values Start -->
-    <section class="my-5">
+    <section class="py-5 overflow-hidden">
         <div class="container mt-5">
             <div class="row mt-4">
                 <div class="col-12 text-center">
@@ -122,7 +128,7 @@
                 </div>
             </div>
             <div class="row g-2">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                     <div class="card shadow">
                         <img src="./assets/images/cards/cards (1).png" class="img-fluid" alt="Card Image" height="500px"
                             width="500px">
@@ -134,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <div class="card shadow">
                         <img src="./assets/images/cards/cards (2).png" class="img-fluid" alt="Card Image">
                         <div class="card-body">
@@ -145,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                     <div class="card shadow">
                         <img src="./assets/images/cards/cards (3).png" class="img-fluid" alt="Card Image">
                         <div class="card-body">
@@ -162,42 +168,46 @@
     </section>
     <!-- Values End -->
 
-    <!-- Counts -->
-    <section>
+    <!-- Counts Start -->
+    <section class="py-5 overflow-hidden">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="flip-left" data-aos-delay="400" data-aos-duration="3500">
                     <div class="counts shadow d-flex align-items-center justify-content-center p-3 rounded-2">
                         <span class="me-3"><i class="bi bi-clipboard-data blue"></i></span>
                         <div>
-                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="805">0</span>
+                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="805">0</span>
                             <p>لورم ایپسوم</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="fade-left" data-aos-delay="500" data-aos-duration="3500">
                     <div class="counts shadow d-flex align-items-center justify-content-center p-3 rounded-2">
                         <span class="me-3"><i class="bi bi-alarm orange"></i></span>
                         <div>
-                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="105">0</span>
+                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="105">0</span>
                             <p>لورم ایپسوم</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="fade-left" data-aos-delay="600" data-aos-duration="3500">
                     <div class="counts shadow d-flex align-items-center justify-content-center p-3 rounded-2">
                         <span class="me-3"><i class="bi bi-chat-dots red"></i></span>
                         <div>
-                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="1080">0</span>
+                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="1080">0</span>
                             <p>لورم ایپسوم</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3">
+                <div class="col-md-4 col-lg-3" data-aos="fade-left" data-aos-delay="100" data-aos-duration="3500">
                     <div class="counts shadow d-flex align-items-center justify-content-center p-3 rounded-2">
                         <span class="me-3"><i class="bi bi-boombox green"></i></span>
                         <div>
-                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0" data-purecounter-end="679">0</span>
+                            <span class="fw-bold fs-2 text-primary purecounter" data-purecounter-start="0"
+                                data-purecounter-end="679">0</span>
                             <p>لورم ایپسوم</p>
                         </div>
                     </div>
@@ -205,18 +215,432 @@
             </div>
         </div>
     </section>
+    <!-- Counts End -->
 
 
-
-    <section style="height: 500px;">
-
+    <!-- Features Start-->
+    <section class="features py-5 overflow-hidden">
+        <div class="container-fluid">
+            <h4 class="fw-bold text-center text-lg-start ms-lg-5">لورم ایپسوم متن ساختگی</h4>
+            <div class="row align-items-center">
+                <div class="col-lg-4" data-aos="fade-down-left" data-aos-delay="400" data-aos-duration="3500">
+                    <img src="./assets/images/cards/Featur.png" alt="Features" class="img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row gy-4">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-bookmark-check me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-bag-check me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-building me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-hourglass-split me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-terminal-x me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3500">
+                            <div class="d-flex">
+                                <i class="bi bi-window-plus me-2"></i>
+                                <div>
+                                    <h5>لورم ایپسوم متن ساختگی</h5>
+                                    <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                        استفاده از طراحان گرافیک است. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- Features End-->
+
+    <!-- Services Start -->
+    <section class="services py-5 overflow-hidden">
+        <div class="container">
+            <h4 class="fw-bold ms-2">لورم ایپسوم متن ساختگی</h4>
+            <p class="text-primary">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                گرافیک است.</p>
+            <div class="row gy-3 mt-5">
+                <div class="col-md-6 col-lg-4" >
+                    <div class="services-box shadow blue" data-aos="fade-left" data-aos-delay="200" data-aos-duration="">
+                        <i class="bi bi-save icon mb-2"></i>
+                        <h3 class="fw-bold">لورم ایپسوم</h3>
+                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                            طراحان گرافیک است.</p>
+                        <a href="#">
+                            مشاهده سرویس
+                            <i class="bi bi-arrow-left-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-box shadow orange" data-aos="fade-up" data-aos-delay="200" data-aos-duration="">
+                        <i class="bi bi-save icon mb-2"></i>
+                        <h3 class="fw-bold">لورم ایپسوم</h3>
+                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                            طراحان گرافیک است.</p>
+                        <a href="#">
+                            مشاهده سرویس
+                            <i class="bi bi-arrow-left-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-box shadow green" data-aos="fade-right" data-aos-delay="200" data-aos-duration="">
+                        <i class="bi bi-save icon mb-2"></i>
+                        <h3 class="fw-bold">لورم ایپسوم</h3>
+                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                            طراحان گرافیک است.</p>
+                        <a href="#">
+                            مشاهده سرویس
+                            <i class="bi bi-arrow-left-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services End -->
+
+
+    <!-- Pricing Start -->
+    <section class="pricing overflow-hidden">
+        <div class="container">
+            <h4 class="fw-bold mt-5">لورم ایپسوم متن ساختگی</h4>
+            <div class="row gy-3 mt-4">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h4 class=" fw-bold blue">طرح رایگان</h4>
+                            <div>0 <sup>تومان</sup> / در ماه</div>
+                            <img src="./assets/images/cards/p1.png" alt="Plan Image" class="img-fluid">
+                            <ul class="list-unstyled">
+                                <li class="">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن </li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم</li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم متن ساختگی با طرح
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">سفارش</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h4 class=" fw-bold orange">طرح دو</h4>
+                            <div>42<sup>تومان</sup> / در ماه</div>
+                            <img src="./assets/images/cards/p2.png" alt="Plan Image" class="img-fluid">
+                            <ul class="list-unstyled">
+                                <li class="">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن </li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم متن</li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم متن ساختگی با طرح
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">سفارش</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="4000">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h4 class=" fw-bold green">طرح سه</h4>
+                            <div>59<sup>تومان</sup> / در ماه</div>
+                            <img src="./assets/images/cards/p3.png" alt="Plan Image" class="img-fluid">
+                            <ul class="list-unstyled">
+                                <li class="">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن </li>
+                                <li class="my-2 text-muted">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2 text-muted text-decoration-line-through">لورم ایپسوم متن ساختگی با طرح
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">سفارش</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="5000">
+                    <div class="card shadow text-center">
+                        <div class="card-body">
+                            <h4 class=" fw-bold red">طرح چهار</h4>
+                            <div>79<sup>تومان</sup> / در ماه</div>
+                            <img src="./assets/images/cards/p4.png" alt="Plan Image" class="img-fluid">
+                            <ul class="list-unstyled">
+                                <li class="">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن </li>
+                                <li class="my-2">لورم ایپسوم</li>
+                                <li class="my-2">لورم ایپسوم متن</li>
+                                <li class="my-2">لورم ایپسوم متن ساختگی با طرح</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">سفارش</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing End -->
+
+
+    <!-- Contact Start -->
+    <section class="contact py-5 overflow-hidden">
+        <div class="container mt-5">
+            <h3 class="fw-bold text-center">ارتباط با ما</h3>
+            <div class="row">
+                <div class="col-md-6 mt-4"  data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
+                    <div class="row gy-3">
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4 class="fw-bold">آدرس :</h4>
+                                <p>لورم ایپسوم <br> لورم ایپسوم متن ساختگی</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-telephone"></i>
+                                <h4 class="fw-bold">شماره تماس :</h4>
+                                <p class="celphone">+98 914 000 0000 <br> +98 914 000 0000 </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-envelope-check"></i>
+                                <h4 class="fw-bold"> ایمیل :</h4>
+                                <p>info@gmail.com<br> contact@gmail.com </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <i class="bi bi-clock-history"></i>
+                                <h4 class="fw-bold"> پشتیبانی :</h4>
+                                <p">24 ساعت روز<br> هفت روز هقته در خدمت شما عزیزان </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-4" data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
+                    <form action="#" class="contact-form">
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="Name" class="form-label">نام</label>
+                                <input type="text" id="Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Email" class="form-label">ایمیل</label>
+                                <input type="email" id="Email" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="subject" class="form-label">موضوع</label>
+                                <input type="text" id="subject" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="text" class="form-label">متن پیام</label>
+                                <textarea type="text" id="text" class="form-control" rows="5"></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+
+
+    <!-- Footer Start -->
+    <footer class="mt-5 overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-5">
+                    <div class="footer-social">
+                        <a href="index.html"><img src="./assets/images/logo.png" alt="Footer logo" class="img-fluid"
+                                height="500" width="100"></a>
+                        <p class="pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                            گرافیک است.</p>
+                        <ul class="list-unstyled d-flex social-links">
+                            <li class="me-2"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="me-2"><a href="#"><i class="bi bi-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-links">
+                                <h4>لینک های مفید</h4>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            صفحه اصلی
+                                        </a></li>
+
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            محصولات
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            پلن های جدید
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            درباره ما
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-links">
+                                <h4>محصولات</h4>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            لورم ایپسوم
+                                        </a></li>
+
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            لورم ایپسوم
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            لورم ایپسوم
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            لورم ایپسوم
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-links">
+                                <h4>ارتباط با ما</h4>
+                                <hr>
+                                <ul class="list-unstyled">
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            تماس با ما
+                                        </a></li>
+                                        <li><a href="#">
+                                            <i class="bi bi-caret-left"></i>
+                                            درباره ما
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center end-footer mt-4">
+            <h4><a href="http://mihranw.ir">Mihranw.ir</a></h4>
+            <p>وقتی رشد میکنی که ، تلاشی کرده باشی</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
     <script src="./assets/js/Jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
